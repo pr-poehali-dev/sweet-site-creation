@@ -98,7 +98,7 @@ const Stars = () => {
           <img 
             src="https://cdn.poehali.dev/files/14bfae7c-7549-4a40-a6bb-d86c3dd830e8.png" 
             alt="Милая звездочка"
-            className="w-40 h-40 animate-pulse"
+            className="w-80 h-80 animate-pulse"
             style={{
               filter: 'drop-shadow(0 0 20px #ffd700)',
             }}
@@ -164,14 +164,14 @@ const Stars = () => {
         <Button
           onClick={(e) => {
             e.stopPropagation();
-            navigate('/calendar');
+            navigate('/letters');
           }}
           variant="outline"
           size="sm"
           className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm text-xs px-3 py-1"
         >
-          <Icon name="Calendar" size={12} className="mr-1" />
-          Календарь
+          <Icon name="Mail" size={12} className="mr-1" />
+          Письма
         </Button>
       </div>
 
