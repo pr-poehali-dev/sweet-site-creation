@@ -41,7 +41,7 @@ const Counter = () => {
         {[...Array(25)].map((_, i) => (
           <div
             key={i}
-            className="absolute animate-float opacity-60"
+            className="absolute animate-float opacity-60 text-pink-400"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -50,7 +50,7 @@ const Counter = () => {
               fontSize: `${Math.random() * 15 + 10}px`,
             }}
           >
-            '♡'
+            ♡
           </div>
         ))}
       </div>
