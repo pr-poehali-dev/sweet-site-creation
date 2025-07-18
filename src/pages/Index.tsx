@@ -93,13 +93,21 @@ const Index = () => {
         нажми на сердечко ✨
       </p>
       
-      {/* Navigation button */}
-      <button
-        onClick={() => navigate('/photo')}
-        className="mt-8 bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
-      >
-        посмотреть наше фото 📸
-      </button>
+      {/* Navigation buttons */}
+      <div className="flex gap-4 mt-8">
+        <button
+          onClick={() => navigate('/photo')}
+          className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+        >
+          посмотреть наше фото 📸
+        </button>
+        <button
+          onClick={() => navigate('/calendar')}
+          className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+        >
+          наш календарь 📅
+        </button>
+      </div>
     </div>
   );
 };

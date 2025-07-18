@@ -81,13 +81,21 @@ const Photo = () => {
           нажми на фото 📸
         </p>
 
-        {/* Back button */}
-        <button
-          onClick={() => navigate('/')}
-          className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
-        >
-          назад к сердечку 💗
-        </button>
+        {/* Navigation buttons */}
+        <div className="flex gap-4">
+          <button
+            onClick={() => navigate('/')}
+            className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            назад к сердечку 💗
+          </button>
+          <button
+            onClick={() => navigate('/calendar')}
+            className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+          >
+            наш календарь 📅
+          </button>
+        </div>
       </div>
     </div>
   );
