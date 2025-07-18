@@ -52,18 +52,18 @@ const Photo = () => {
       {/* Main photo container */}
       <div className="text-center relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold text-[#FF69B4] mb-8">
-          наша любовь ✨
+          наша любовь ❤️
         </h1>
         
         {/* Photo */}
         <div 
           onClick={handlePhotoClick}
-          className="cursor-pointer transition-all duration-300 hover:scale-105 mb-8"
+          className="cursor-pointer transition-all duration-300 hover:scale-105 mb-8 flex justify-center"
         >
           <img 
             src="https://cdn.poehali.dev/files/cfde35f9-96f8-42f0-9167-e901ba960209.jpg"
             alt="Наше фото"
-            className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl shadow-2xl border-4 border-[#FFB6C1]"
+            className="w-80 h-80 md:w-96 md:h-96 object-cover rounded-3xl shadow-2xl border-4 border-[#FFB6C1] mx-auto"
           />
         </div>
 
@@ -90,10 +90,10 @@ const Photo = () => {
             назад к сердечку 💗
           </button>
           <button
-            onClick={() => navigate('/calendar')}
+            onClick={() => navigate('/gallery')}
             className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
           >
-            наш календарь 📅
+            наши фото 📸
           </button>
         </div>
       </div>
