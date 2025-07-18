@@ -11,6 +11,7 @@ import Gallery from "./pages/Gallery";
 import Stars from "./pages/Stars";
 import Letters from "./pages/Letters";
 import Gift from "./pages/Gift";
+import Counter from "./pages/Counter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/stars" element={<Stars />} />
           <Route path="/letters" element={<Letters />} />
           <Route path="/gift" element={<Gift />} />
+          <Route path="/counter" element={<Counter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

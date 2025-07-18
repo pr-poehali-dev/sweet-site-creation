@@ -119,6 +119,12 @@ const Index = () => {
         >
           подарок 🎁
         </button>
+        <button
+          onClick={() => navigate('/counter')}
+          className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
+        >
+          счётчик 💕
+        </button>
       </div>
     </div>
   );
