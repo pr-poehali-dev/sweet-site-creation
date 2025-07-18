@@ -12,6 +12,7 @@ import Stars from "./pages/Stars";
 import Letters from "./pages/Letters";
 import Gift from "./pages/Gift";
 import Counter from "./pages/Counter";
+import Comfort from "./pages/Comfort";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/letters" element={<Letters />} />
           <Route path="/gift" element={<Gift />} />
           <Route path="/counter" element={<Counter />} />
+          <Route path="/comfort" element={<Comfort />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

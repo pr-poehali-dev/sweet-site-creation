@@ -125,6 +125,12 @@ const Index = () => {
         >
           счётчик 💕
         </button>
+        <button
+          onClick={() => navigate('/comfort')}
+          className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
+        >
+          если грустно 🤗
+        </button>
       </div>
     </div>
   );
