@@ -113,6 +113,12 @@ const Index = () => {
         >
           звезды ⭐
         </button>
+        <button
+          onClick={() => navigate('/gift')}
+          className="bg-[#FF69B4] hover:bg-[#FF1493] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
+        >
+          подарок 🎁
+        </button>
       </div>
     </div>
   );
