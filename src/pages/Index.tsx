@@ -94,18 +94,24 @@ const Index = () => {
       </p>
       
       {/* Navigation buttons */}
-      <div className="flex gap-4 mt-8">
+      <div className="flex flex-wrap gap-3 mt-8 justify-center">
         <button
           onClick={() => navigate('/photo')}
-          className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+          className="bg-[#FFB6C1] hover:bg-[#FF69B4] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
         >
-          посмотреть наше фото 📸
+          фото 📸
         </button>
         <button
           onClick={() => navigate('/calendar')}
-          className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-6 rounded-full transition-all duration-300 hover:scale-105 shadow-lg"
+          className="bg-[#DDA0DD] hover:bg-[#DA70D6] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
         >
-          наш календарь 📅
+          календарь 📅
+        </button>
+        <button
+          onClick={() => navigate('/stars')}
+          className="bg-[#4A5568] hover:bg-[#2D3748] text-white font-medium py-3 px-5 rounded-full transition-all duration-300 hover:scale-105 shadow-lg text-sm"
+        >
+          звезды ⭐
         </button>
       </div>
     </div>
