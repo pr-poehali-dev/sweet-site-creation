@@ -51,19 +51,20 @@ const Stars = () => {
 
   return (
     <div 
-      className="min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-blue-900 relative overflow-hidden cursor-pointer"
+      className="min-h-screen relative overflow-hidden cursor-pointer"
       onClick={handleBackgroundClick}
       style={{
-        backgroundImage: `url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="star" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:%23ffffff;stop-opacity:1" /><stop offset="100%" style="stop-color:%23ffffff;stop-opacity:0" /></radialGradient></defs>${Array.from({ length: 200 }, (_, i) => 
-          `<circle cx="${Math.random() * 1000}" cy="${Math.random() * 1000}" r="${Math.random() * 2 + 0.5}" fill="url(%23star)" opacity="${Math.random() * 0.8 + 0.2}">`
-        ).join('')}</svg>')`,
+        backgroundImage: `url('https://cdn.poehali.dev/files/468d67bf-93bf-40f7-aefc-14aa73878709.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      {/* Звездное небо с мерцающими звездами */}
+      {/* Темный оверлей для лучшей читаемости */}
+      <div className="absolute inset-0 bg-black/30"></div>
+      
+      {/* Дополнительные мерцающие звезды */}
       <div className="absolute inset-0">
-        {[...Array(150)].map((_, i) => (
+        {[...Array(100)].map((_, i) => (
           <div
             key={i}
             className="absolute animate-ping"
@@ -73,8 +74,8 @@ const Stars = () => {
               animationDelay: `${Math.random() * 5}s`,
               animationDuration: `${2 + Math.random() * 3}s`,
               color: '#ffffff',
-              fontSize: `${Math.random() * 8 + 4}px`,
-              opacity: Math.random() * 0.8 + 0.2,
+              fontSize: `${Math.random() * 6 + 3}px`,
+              opacity: Math.random() * 0.6 + 0.2,
             }}
           >
             ✦
@@ -85,18 +86,23 @@ const Stars = () => {
       {/* Падающая звезда */}
       {showStar && (
         <div
-          className="absolute text-6xl cursor-pointer transition-all duration-2000 ease-out hover:scale-110"
+          className="absolute cursor-pointer transition-all duration-2000 ease-out hover:scale-110"
           style={{
             left: `${starPosition.x}%`,
             top: `${starPosition.y}%`,
             transform: 'translate(-50%, -50%)',
-            color: '#ffd700',
-            textShadow: '0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700',
-            filter: 'drop-shadow(0 0 10px #ffd700)',
+            filter: 'drop-shadow(0 0 15px #ffd700)',
           }}
           onClick={handleStarClick}
         >
-          ⭐
+          <img 
+            src="https://cdn.poehali.dev/files/14bfae7c-7549-4a40-a6bb-d86c3dd830e8.png" 
+            alt="Милая звездочка"
+            className="w-20 h-20 animate-pulse"
+            style={{
+              filter: 'drop-shadow(0 0 20px #ffd700)',
+            }}
+          />
         </div>
       )}
 
@@ -114,7 +120,7 @@ const Stars = () => {
             я достану тебе все звёздочки с неба!
           </p>
           <p className="text-lg text-yellow-200 opacity-80">
-            нажми на звезду ⭐
+            нажми на звездочку ⭐
           </p>
         </div>
       )}
