@@ -50,7 +50,7 @@ const Comfort = () => {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute animate-float opacity-70"
+            className="absolute animate-float opacity-70 text-pink-400"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
@@ -59,7 +59,7 @@ const Comfort = () => {
               fontSize: `${Math.random() * 15 + 12}px`,
             }}
           >
-            {Math.random() > 0.7 ? '🤗' : Math.random() > 0.4 ? '💕' : '🌸'}
+            ♡
           </div>
         ))}
       </div>
@@ -97,7 +97,6 @@ const Comfort = () => {
           onClick={handleSOSClick}
           className="bg-gradient-to-r from-pink-400 to-rose-400 hover:from-pink-500 hover:to-rose-500 text-white font-bold py-8 px-12 rounded-full transition-all duration-300 hover:scale-110 shadow-2xl border-4 border-white"
         >
-          <div className="text-6xl mb-2">🆘</div>
           <div className="text-2xl font-black">SOS</div>
           <div className="text-sm font-medium mt-2">нажми меня!</div>
         </button>
