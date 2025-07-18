@@ -50,7 +50,7 @@ const Counter = () => {
               fontSize: `${Math.random() * 15 + 10}px`,
             }}
           >
-            {Math.random() > 0.5 ? '💕' : '💖'}
+            '♡'
           </div>
         ))}
       </div>
@@ -148,7 +148,7 @@ const Counter = () => {
             <div className="bg-white/60 rounded-2xl p-4">
               <div className="text-3xl mb-2">💖</div>
               <p className="text-pink-700 font-medium">
-                сколько раз сказал "люблю": не сосчитать!
+                сколько раз сказала "люблю": не сосчитать!
               </p>
             </div>
           </div>
