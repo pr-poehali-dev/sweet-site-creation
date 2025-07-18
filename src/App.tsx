@@ -10,6 +10,7 @@ import Calendar from "./pages/Calendar";
 import Gallery from "./pages/Gallery";
 import Stars from "./pages/Stars";
 import Letters from "./pages/Letters";
+import Gift from "./pages/Gift";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/stars" element={<Stars />} />
           <Route path="/letters" element={<Letters />} />
+          <Route path="/gift" element={<Gift />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

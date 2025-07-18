@@ -98,7 +98,7 @@ const Stars = () => {
           <img 
             src="https://cdn.poehali.dev/files/14bfae7c-7549-4a40-a6bb-d86c3dd830e8.png" 
             alt="Милая звездочка"
-            className="w-80 h-80 animate-pulse"
+            className="w-96 h-80 animate-pulse"
             style={{
               filter: 'drop-shadow(0 0 20px #ffd700)',
             }}
