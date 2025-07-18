@@ -98,7 +98,7 @@ const Stars = () => {
           <img 
             src="https://cdn.poehali.dev/files/14bfae7c-7549-4a40-a6bb-d86c3dd830e8.png" 
             alt="Милая звездочка"
-            className="w-20 h-20 animate-pulse"
+            className="w-40 h-40 animate-pulse"
             style={{
               filter: 'drop-shadow(0 0 20px #ffd700)',
             }}
@@ -136,17 +136,18 @@ const Stars = () => {
       </div>
 
       {/* Навигация */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-4 z-10">
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
         <Button
           onClick={(e) => {
             e.stopPropagation();
             navigate('/');
           }}
           variant="outline"
-          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm"
+          size="sm"
+          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm text-xs px-3 py-1"
         >
-          <Icon name="Home" size={16} className="mr-2" />
-          На главную
+          <Icon name="Home" size={12} className="mr-1" />
+          Главная
         </Button>
         <Button
           onClick={(e) => {
@@ -154,10 +155,11 @@ const Stars = () => {
             navigate('/photo');
           }}
           variant="outline"
-          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm"
+          size="sm"
+          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm text-xs px-3 py-1"
         >
-          <Icon name="Camera" size={16} className="mr-2" />
-          К фото
+          <Icon name="Camera" size={12} className="mr-1" />
+          Фото
         </Button>
         <Button
           onClick={(e) => {
@@ -165,9 +167,10 @@ const Stars = () => {
             navigate('/calendar');
           }}
           variant="outline"
-          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm"
+          size="sm"
+          className="bg-white/20 hover:bg-white/30 border-white/30 text-white hover:text-white backdrop-blur-sm text-xs px-3 py-1"
         >
-          <Icon name="Calendar" size={16} className="mr-2" />
+          <Icon name="Calendar" size={12} className="mr-1" />
           Календарь
         </Button>
       </div>
